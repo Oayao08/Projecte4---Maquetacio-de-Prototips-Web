@@ -15,3 +15,26 @@ a li {
     text-decoration: none;
     color: white
 }
+
+.titulo {
+    font-size: 24px;
+    margin: 5px 0;
+}
+
+.subtitulo {
+    font-size: 16px;
+    margin: 0;
+    color: #666;
+    transition-duration: 0.3s;
+}
+
+footer {
+    text-align: center;
+    gap: 10px;
+    padding: 20px;
+    background-color: #332f2f;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
