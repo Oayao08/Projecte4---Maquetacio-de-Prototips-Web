@@ -5,3 +5,8 @@
     
 }
 
+.imagen-prototip img {
+    height: 740px;
+    width: 200px;
+    display: block;
+}
