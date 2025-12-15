@@ -30,7 +30,7 @@ a li {
     transition-duration: 0.3s;
 }
 
-.prototips-container {
+.galeria {
     justify-content: center;
     justify-items: center;
     display: flex;
@@ -39,7 +39,7 @@ a li {
     margin: 20px;
 }
 
-.prototips {
+.galeria-item {
     flex-direction: column;
     padding: 1rem;
     justify-content: center;
@@ -69,8 +69,8 @@ img {
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    height: 200px;
-    width: 300px;
+    height: 150px;
+    width: 250px;
     color-scheme: black;
 }
 
