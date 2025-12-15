@@ -30,15 +30,26 @@ a li {
     transition-duration: 0.3s;
 }
 
+.prototips-container {
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 120px;
+    margin: 20px;
+}
+
 .prototips {
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: center;
     align-items: baseline;
     background-color: rgb(255, 255, 255);
-    border-radius: 10px;
     border-color: #333;
     padding: 10px;
     display: flex;
-    height: 250px;
-    width: 350px;
+    height: 370px;
+    width: 250px;
 }
 
 article {
@@ -70,14 +81,6 @@ h3 {
     
 }
 
-.prototips-container {
-    justify-content: center;
-    justify-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 100px;
-    margin: 20px;
-}
 
 footer {
     text-align: center;
