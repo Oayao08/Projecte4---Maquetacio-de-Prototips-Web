@@ -12,6 +12,16 @@ h1{
     margin-top: 20px;
 }
 
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    background-color: #e2e2e2;
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+}
 
 a li {
     text-decoration: none;
@@ -52,10 +62,19 @@ a li {
     width: 250px;
 }
 
+.hero {
+    background-color: #053b08be;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
 article {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-decoration: none;
     background-color: #444141;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -87,8 +106,9 @@ h3 {
     margin-top: 10px;
     color: black;
     font-size: 18px;
+    text-decoration: none;
+    list-style: none;
 }
-
 
 footer {
     text-align: center;
@@ -96,7 +116,6 @@ footer {
     padding: 20px;
     background-color: #332f2f;
     color: white;
-    position: fixed;
     width: 100%;
     bottom: 0;
 }
