@@ -57,12 +57,20 @@ article {
     flex-direction: column;
     align-items: center;
     background-color: #444141;
-    border-radius: 15px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px;
     padding: 15px;
     width: 380px;
     transition: transform 0.3s, box-shadow 0.3s;
+    border: 0.2px solid #020202;
+}
+
+article:hover {
+    transform: translateY(-20px); /*Añadir efecto transición al pasar el ratón*/
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /*añade sombra*/
+    background-color: #f3e9e9;
+    transition-duration: 0.3s;
 }
 
 img {
@@ -78,7 +86,7 @@ h3 {
     text-align: center;
     margin-top: 10px;
     color: black;
-    
+    font-size: 18px;
 }
 
 
