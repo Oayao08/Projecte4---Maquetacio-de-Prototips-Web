@@ -23,8 +23,23 @@ h1{
     border-bottom: 2px solid #ccc;
 }
 
+.navbar-links{
+    display: flex;
+    list-style: none;
+    list-style-type: none;
+    text-decoration: none;
+    gap: ;
+    color:white;
+    justify-content: center;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
 a li {
     text-decoration: none;
+    list-style-type: none;
+    margin: 0 15px;
+    font-size: 18px;
     color: black;
 }
 
