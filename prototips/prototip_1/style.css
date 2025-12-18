@@ -1,3 +1,11 @@
+.body{
+    font-family: "Cormorant Garamond", serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
 .container{
     background-color: lightgray;
     padding: 100px;
