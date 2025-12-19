@@ -1,39 +1,110 @@
-.body{
+body {
     font-family: "Cormorant Garamond", serif;
-    background-color: #f4f4f4;
+    background: #f2f3f5;
     margin: 0;
     padding: 0;
-    color: black;
+    color: #222;
+    line-height: 1.6;
 }
 
-.container{
-    background-color: lightgray;
-    padding: 100px;
-    margin: 100px;
+
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 60px;
+    background-color: #ffffff;
     text-align: center;
-    border: 1px solid black;
-    
+
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
 }
 
+.navbar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    padding: 20px 0;
+    border-bottom: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-links:hover {
+    background-color: #041c38;
+    transition-duration: 0.3s;
+
+}
+
+.navbar-links {
+    display: flex;
+    gap: 60px;
+    list-style: none;
+    padding: 10px 30px;
+    margin: 15px 0 0 0;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #74a2f1;
+    padding: 8px 14px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.navbar-links li a:hover {
+    background-color: #2a5298;
+    color: rgb(255, 253, 253);
+    transform: translateY(-2px);
+}
+
+/* Imagen */
 .imagen-prototip img {
-    align-content: center;
-    justify-content: center;
-    height: 1400px;
-    width: 1400px;
     display: block;
-}
+    margin: 40px auto;
 
+    max-width: 100%;
+    height: auto;
+
+    border-radius: 12px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+/* Botón */
 button {
-    background-color: #4CAF50;
-    justify-content: center;
+    background: linear-gradient(135deg, #4CAF50, #3e9e45);
     border: none;
     color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
+
+    padding: 14px 36px;
     font-size: 16px;
-    margin: 4px 2px;
+    font-weight: 500;
+
+    border-radius: 30px;
     cursor: pointer;
-    border-radius: 12px;
+
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 16px rgba(76, 175, 80, 0.3);
 }
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(76, 175, 80, 0.4);
+    background: linear-gradient(135deg, #43a047, #2e7d32);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 30px;
+        margin: 40px 20px;
+    }
+
+    button {
+        width: 100%;
+        padding: 16px 0;
+    }
+}   
