@@ -202,6 +202,40 @@ h3 {
     list-style: none;
 }
 
+.contact-form {
+  display: flex;          /* sigue usando flex */
+  flex-direction: column; /* los elementos se apilan verticalmente */
+  gap: 15px;              /* espacio entre campos */
+  max-width: 500px;       /* ancho máximo para que no quede gigante */
+  margin: 20px auto;      /* centrado horizontalmente */
+}
+
+.contact-for input,
+.contacto-form textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form .button {
+    background-color: #2a5298;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-form .button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
 footer {
     text-align: center;
     gap: 10px;
