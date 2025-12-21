@@ -236,6 +236,7 @@ h3 {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
+/*Botones prototipo anterior y siguiente*/
 .navegacion-prototipos {
   display: flex;
   justify-content: space-between;
@@ -257,11 +258,13 @@ h3 {
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
+/*Hover de nav class*/
 .nav-prototipo:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 30px rgba(0,0,0,0.35);
 }
 
+/*Efectos*/
 .nav-prototipo.anterior {
   opacity: 0.9;
 }
