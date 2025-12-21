@@ -93,7 +93,7 @@ h1{
 }
 
 
-/*Esto es un efecto para que galería sea en forma de tarjetas*/
+/*Efecto para que galería sea en forma de tarjetas*/
 .galeria-item {
   position: relative;
   background-color: #ffffff;
@@ -234,6 +234,40 @@ h3 {
 .contact-form .button:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.navegacion-prototipos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 60px auto;
+  max-width: 900px;
+  padding: 0 20px;
+}
+
+.nav-prototipo {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 14px 24px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #2a5298, #1e3c72);
+  color: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.nav-prototipo:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+}
+
+.nav-prototipo.anterior {
+  opacity: 0.9;
+}
+
+.nav-prototipo.siguiente {
+  opacity: 1;
 }
 
 footer {
