@@ -24,8 +24,8 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(135deg, #1e3c72, #2a5298);
-  padding: 1.5rem 1rem;
+  background: linear-gradient(135deg, #1e3c72, #2a5298); /*Sirve para rotar elemento*/
+  padding: 1.5rem 1rem; /*Apunte extra: rem significa Root em, 1rem=16px*/
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
 }
 
@@ -68,7 +68,7 @@ h1 {
 .subtitulo {
   font-size: 16px;
   margin: 0;
-  color: #666;
+  color: #b9b9b9;
   transition-duration: 0.3s;
 }
 

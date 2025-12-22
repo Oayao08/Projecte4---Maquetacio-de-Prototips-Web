@@ -68,7 +68,7 @@ h1 {
 .subtitulo {
   font-size: 16px;
   margin: 0;
-  color: #666;
+  color: #b9b9b9;
   transition-duration: 0.3s;
 }
 
@@ -171,12 +171,12 @@ article:hover {
   transition-duration: 0.3s;
 }
 
-img {
+.hero-image img {
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  height: 150px;
-  width: 250px;
+  height: 450px;
+  width: 650px;
   color-scheme: black;
 }
 
@@ -189,38 +189,39 @@ h3 {
   list-style: none;
 }
 
-.contact-form {
-  display: flex; /* sigue usando flex */
-  flex-direction: column; /* los elementos se apilan verticalmente */
-  gap: 15px; /* espacio entre campos */
-  max-width: 500px; /* ancho máximo para que no quede gigante */
-  margin: 20px auto; /* centrado horizontalmente */
+/*Estilo de botones anterior/posterior*/
+.navegacion-prototipos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 60px auto;
+  max-width: 750px; /*Espacio entre los 2 botones*/
+  padding: 0 20px;
 }
 
-.contact-for input,
-.contacto-form textarea {
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  font-size: 16px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.contact-form .button {
-  background-color: #2a5298;
+.nav-prototipo {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 14px 24px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #2a5298, #1e3c72);
   color: white;
-  border: none;
-  padding: 12px;
-  border-radius: 12px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
-.contact-form .button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+.nav-prototipo:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+}
+
+.nav-prototipo.anterior {
+  opacity: 0.9;
+}
+
+.nav-prototipo.siguiente {
+  opacity: 1;
 }
 
 footer {
