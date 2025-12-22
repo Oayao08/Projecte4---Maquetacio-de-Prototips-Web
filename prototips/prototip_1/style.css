@@ -20,6 +20,12 @@ h1 {
   margin-top: 20px;
 }
 
+h2 {
+  color: #333333;
+  text-align: center;
+  margin-top: 10px;
+}
+
 .navbar {
   display: flex;
   flex-direction: column;
@@ -224,6 +230,14 @@ h3 {
   opacity: 1;
 }
 
+.galeria-item-destacado {
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 1rem;
+}
+
 footer {
   text-align: center;
   gap: 10px;
@@ -242,23 +256,4 @@ footer {
 }
 .galeria-item:hover img {
   transform: none;
-}
-
-.galeria-item-destacado {
-  background: linear-gradient(135deg, #ff7e5f, #feb47b);
-  color: white;
-  padding: 1rem;
-  border-radius: 10px;
-  margin: 1rem;
-}
-
-.galeria-item-destacado h3 {
-  position: static;
-  transform: none;
-  margin: 0;
-  padding: 0;
-  font-size: 1.2rem;
-  background: none;
-  color: #ffffff;
-  opacity: 1;
 }
