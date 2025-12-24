@@ -242,11 +242,3 @@ footer {
 .galeria-item:hover img {
   transform: none;
 }
-article {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-decoration: none;
-  background-color: #444141;
-  border-radius: 10px;
-}
