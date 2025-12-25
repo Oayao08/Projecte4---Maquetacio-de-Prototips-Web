@@ -203,16 +203,21 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
   }
-
   article {
     width: 90%;
   }
 
-  img {
-    width: 100%;
-    height: auto;
+  /* Asegurar que todas las imágenes no se salgan de su contenedor */
+  img, .hero-image {
+  max-width: 100%;  /* nunca más ancho que su contenedor */
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  box-sizing: border-box;
   }
 }
+
+
 
 @media (max-width: 768px) {
   h1 {
