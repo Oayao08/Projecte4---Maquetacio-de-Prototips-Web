@@ -236,6 +236,45 @@ footer {
   bottom: 0;
 }
 
+/*Estilo responsive*/
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem; /*Ajusta el tamaño del texto del h1 para pantallas pequeñas*/
+  }
+
+  .titulo {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .subtitulo {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .galeria {
+    gap: 2rem;
+    margin: 2rem auto; /*Ajusta el margen de la galería para pantallas pequeñas*/
+    padding: 0 1rem;
+  }
+
+  article {
+    margin: 0 auto;
+  }
+
+  img {
+    height: auto;
+  }
+
+  .nav-prototipo {
+    width: 100%;
+    text-align: center;
+  }
+  .navegacion-prototipos {
+    flex-direction: column;
+    gap: 15px; /*Espacio entre botones*/
+  }
+}
 @media (hover: none) {
   .galeria-item:hover {
     transform: none;
