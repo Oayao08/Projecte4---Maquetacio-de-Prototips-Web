@@ -82,12 +82,14 @@ h1 {
 }
 
 /* desplazamiento alterno*/
+/*nth-child(odd) Sirve para aplicar un estilo solo a elementos impares*/
 .galeria-item:nth-child(odd) {
   transform: translateY(30px);
 }
 
+/*nth-child(even) Sirve para aplicar un estilo solo a elementos pares*/
 .galeria-item:nth-child(even) {
-  transform: translateY(-30px);
+  transform: translateY(-30px); /*Este elemento sirve para que cada elemento que esté en una posición par se desplaza 30px hacia arriba.*/
 }
 
 /*Esto es un efecto para que galería sea en forma de tarjetas*/
@@ -147,6 +149,7 @@ h1 {
   color: #ffffff;
   padding: 4rem 2rem;
   text-align: center;
+  align-items: center;
 }
 
 article {
