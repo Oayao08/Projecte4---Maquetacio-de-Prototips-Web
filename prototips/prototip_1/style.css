@@ -179,11 +179,26 @@ footer {
   bottom: 0;
 }
 
-
 /*Estilo responsive*/
+@media (max-width: 1024px) {
+  .galeria {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+
+  article {
+    width: 90%;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
 @media (max-width: 768px) {
   h1 {
-    font-size: 1.8rem; /*Ajusta el tamaño del texto del h1 para pantallas pequeñas*/
+    font-size: 1.8rem;
   }
 
   .titulo {
@@ -196,26 +211,73 @@ footer {
     text-align: center;
   }
 
+  .navbar-links {
+    flex-direction: column;
+    gap: 12px;
+    padding: 1rem 1.5rem;
+  }
+
   .galeria {
-    gap: 2rem;
-    margin: 2rem auto; /*Ajusta el margen de la galería para pantallas pequeñas*/
+    gap: 1.5rem;
     padding: 0 1rem;
+    margin: 2rem auto;
   }
 
   article {
-    margin: 0 auto;
+    margin: 1rem auto;
+    width: 95%;
   }
 
-  img {
-    height: auto;
+  .contact-form {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
   }
 
-  .nav-prototipo {
-    width: 100%;
-    text-align: center;
+  .titulo {
+    font-size: 18px;
   }
-  .navegacion-prototipos {
-    flex-direction: column;
-    gap: 15px; /*Espacio entre botones*/
+
+  .subtitulo {
+    font-size: 13px;
+  }
+
+  .navbar-links li a {
+    font-size: 16px;
+    padding: 0.3rem 0.7rem;
+  }
+
+  .galeria {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .galeria-item:nth-child(odd),
+  .galeria-item:nth-child(even) {
+    transform: none;
+  }
+
+  .galeria-item h3 {
+    font-size: 0.95rem;
+    padding: 0.3rem 0.8rem;
+  }
+}
+
+/* Correcciones al pasar el cursor sobre móviles */
+@media (hover: none) {
+  .galeria-item:hover {
+    transform: none;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+  }
+  .galeria-item:hover img {
+    transform: none;
+  }
+  .galeria-item:hover h3 {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0); /*se asegura de que el elemento quede perfectamente centrado horizontalmente y en su posición vertical normal después de un efecto de animación o hover*/
   }
 }
