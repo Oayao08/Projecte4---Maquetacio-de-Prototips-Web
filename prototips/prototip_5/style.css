@@ -138,8 +138,7 @@ img {
 }
 
 .hero-image {
-  height: 650px;
-  width: 550px;
+  width: 100%;
   max-width: 600px;
   height: auto;
   border-radius: 10px;
@@ -216,8 +215,6 @@ footer {
   box-sizing: border-box;
   }
 }
-
-
 
 @media (max-width: 768px) {
   h1 {
