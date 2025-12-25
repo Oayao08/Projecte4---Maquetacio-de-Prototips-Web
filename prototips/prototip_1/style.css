@@ -6,16 +6,9 @@ body {
   line-height: 1.6;
 }
 
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
 li a {
+  text-decoration: none;
+  list-style-type: none;
   margin: 0 15px;
   font-size: 18px;
   color: black;
@@ -27,44 +20,33 @@ h1 {
   margin-top: 20px;
 }
 
-h2 {
-  color: #333333;
-  text-align: center;
-  margin-top: 10px;
-}
-
-h3 {
-  text-align: center;
-  margin-top: 10px;
-  color: black;
-  font-size: 18px;
-}
-
 .navbar {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(135deg, #1e3c72, #2a5298);
-  padding: 1.5rem 1rem;
+  background: linear-gradient(135deg, #1e3c72, #2a5298); /*Sirve para rotar elemento*/
+  padding: 1.5rem 1rem; /*Apunte extra: rem significa Root em, 1rem=16px*/
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
+}
+
+.navbar-links:hover {
+  background-color: #041c38;
+  transition-duration: 0.3s;
 }
 
 .navbar-links {
   display: flex;
   gap: 2.5rem;
+  list-style: none;
   padding: 0.6rem 2rem;
   margin-top: 1rem;
   background-color: #ffffff;
   border-radius: 999px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-  transition: background-color 0.3s ease;
-}
-
-.navbar-links:hover {
-  background-color: #041c38;
 }
 
 .navbar-links li a {
+  text-decoration: none;
   font-size: 17px;
   font-weight: 500;
   color: #2a5298;
@@ -87,55 +69,91 @@ h3 {
   font-size: 16px;
   margin: 0;
   color: #b9b9b9;
-  transition: color 0.3s ease;
+  transition-duration: 0.3s;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  max-width: 1300px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+}
+
+/* desplazamiento alterno*/
+.galeria-item:nth-child(odd) {
+  transform: translateY(30px);
+}
+
+.galeria-item:nth-child(even) {
+  transform: translateY(-30px);
+}
+
+/*Esto es un efecto para que galería sea en forma de tarjetas*/
+.galeria-item {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12), 0 30px 60px rgba(0, 0, 0, 0.08);
+  transition: transform 0.45s cubic-bezier(0.2, 0.8, 0.2, 1),
+    box-shadow 0.45s cubic-bezier(0.2, 0.8, 0.2, 1);
+  cursor: pointer;
+}
+
+/*Efectos visuales*/
+
+.galeria-item:hover {
+  transform: translateY(-12px) scale(1.015);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25), 0 45px 90px rgba(0, 0, 0, 0.18);
 }
 
 .hero {
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /*Crear un fondo degradado lineal*/
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   color: #ffffff;
   padding: 4rem 2rem;
   text-align: center;
-}
-
-.hero-image img {
-  border-radius: 10px;
-  height: 450px;
-  width: 100%;
-  max-width: 650px;
 }
 
 article {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-decoration: none;
   background-color: #444141;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 20px;
   padding: 15px;
   width: 380px;
-  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
-  border: 1px solid #020202;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 0.2px solid #020202;
 }
 
 article:hover {
-  transform: translateY(-20px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  transform: translateY(-20px); /*Añadir efecto transición al pasar el ratón*/
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /*añade sombra*/
   background-color: #f3e9e9;
+  transition-duration: 0.3s;
 }
 
-.galeria-item-destacado img {
-  width: 100%;
-  height: 250px; /* Ajusta según tu diseño */
-  object-fit: cover;
+img {
+  align-items: center;
+  justify-content: center;
   border-radius: 10px;
-  display: flex;
+  height: 150px;
+  width: 250px;
+  color-scheme: black;
 }
 
-
-.galeria-item-destacado:hover {
-  transform: none;
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+h3 {
+  text-align: center;
+  margin-top: 10px;
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
+  list-style: none;
 }
 
 .navegacion-prototipos {
@@ -172,10 +190,23 @@ article:hover {
 }
 
 footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
   gap: 10px;
+  padding: 20px;
+  background-color: #332f2f;
+  color: white;
+  width: 100%;
+  bottom: 0;
+}
+
+@media (hover: none) {
+  .galeria-item:hover {
+    transform: none;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+  }
+}
+.galeria-item:hover img {
+  transform: none;
 }
 
 
