@@ -106,7 +106,7 @@ article.destacado {
   position: absolute;
   top: 15px;           /* distancia desde arriba */
   left: 15px;         /* distancia desde la izquierda */
-  background: linear-gradient(135deg, #d4af37, #f9e076); /* degradado dorado */
+  background: linear-gradient(135deg, #28d9df, #f9e076); /* degradado dorado */
   color: #1f2933;
   font-size: 12px;
   font-weight: 700;
