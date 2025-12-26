@@ -61,7 +61,16 @@ h1 {
 }
 
 .titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #4a8ef5;
   font-size: 24px;
+  margin-top: 30px;
+  gap: 15px;
+}
+
+.titulo h2 {
   margin: 5px 0;
 }
 
