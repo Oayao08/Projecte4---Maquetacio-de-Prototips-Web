@@ -14,6 +14,10 @@ li a {
   color: black;
 }
 
+a {
+  text-decoration: none;
+}
+
 h1 {
   color: #ffffff;
   text-align: center;
