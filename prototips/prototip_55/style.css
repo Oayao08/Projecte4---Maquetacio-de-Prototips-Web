@@ -157,7 +157,16 @@ img {
   border-radius: 10px;
 }
 
+.icons-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* aquí el valor que quieras */
+}
 
+.icon-palestina {
+    width: 40px; /* ajusta según necesites */
+    height: auto;
+}
 
 h3 {
   text-align: center;
