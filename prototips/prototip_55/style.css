@@ -157,19 +157,7 @@ img {
   border-radius: 10px;
 }
 
-.imagen-izquierda {
-  float: left;
-  width: 45%;
-  margin-right: 10%;
-  border-radius: 15px;
-}
 
-.imagen-derecha {
-  float: right;
-  width: 45%;
-  margin-left: 10%;
-  border-radius: 15px;
-}
 
 h3 {
   text-align: center;
