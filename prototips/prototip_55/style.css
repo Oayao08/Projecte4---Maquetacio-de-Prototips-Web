@@ -158,14 +158,16 @@ img {
 }
 
 .icons-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px; /* aquí el valor que quieras */
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
 }
 
 .icon-palestina {
-    width: 40px; /* ajusta según necesites */
-    height: auto;
+  width: 40px;
+  height: auto;
+  mix-blend-mode: multiply;
+  filter: drop-shadow(0 0 0 transparent);
 }
 
 h3 {
