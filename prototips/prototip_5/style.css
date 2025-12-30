@@ -260,10 +260,6 @@ footer {
     margin: 1rem auto;
     width: 95%;
   }
-
-  .contact-form {
-    padding: 0 1rem;
-  }
 }
 
 @media (max-width: 480px) {
@@ -289,28 +285,4 @@ footer {
     gap: 1rem;
   }
 
-  .galeria-item:nth-child(odd),
-  .galeria-item:nth-child(even) {
-    transform: none;
-  }
-
-  .galeria-item h3 {
-    font-size: 0.95rem;
-    padding: 0.3rem 0.8rem;
-  }
-}
-
-/* Correcciones al pasar el cursor sobre móviles */
-@media (hover: none) {
-  .galeria-item:hover {
-    transform: none;
-    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
-  }
-  .galeria-item:hover img {
-    transform: none;
-  }
-  .galeria-item:hover h3 {
-    opacity: 1;
-    transform: translateX(-50%) translateY(0); /*se asegura de que el elemento quede perfectamente centrado horizontalmente y en su posición vertical normal después de un efecto de animación o hover*/
-  }
 }

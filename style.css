@@ -237,6 +237,8 @@ footer {
 }
 
 /*Estilo responsive*/
+
+/*Para ordenadores pequeños*/
 @media (max-width: 1024px) {
   .galeria {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -253,6 +255,7 @@ footer {
   }
 }
 
+/*Tablet*/
 @media (max-width: 768px) {
   h1 {
     font-size: 1.8rem;
@@ -289,7 +292,7 @@ footer {
     padding: 0 1rem;
   }
 }
-
+/*Móviles*/
 @media (max-width: 480px) {
   h1 {
     font-size: 1.5rem;
