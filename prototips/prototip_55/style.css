@@ -97,26 +97,7 @@ h1 {
 .hero {
   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   color: #ffffff;
-  padding: 4rem 2rem;
   text-align: center;
-}
-
-article.destacado {
-  position: relative; /* importante para que el badge se posicione dentro del artículo */
-}
-
-/*Detalle para prototipos destacados*/
-.badge {
-  position: absolute;
-  top: 15px;           /* distancia desde arriba */
-  left: 15px;         /* distancia desde la izquierda */
-  background: linear-gradient(135deg, #28d9df, #f9e076);
-  color: #1f2933;
-  font-size: 12px;
-  font-weight: 700;
-  padding: 6px 12px;   /* espacio interno del badge */
-  border-radius: 999px;
-  letter-spacing: 1px;
 }
 
 article {
@@ -150,91 +131,101 @@ img {
   color-scheme: black;
 }
 
-.hero-image {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  border-radius: 10px;
-}
-
-/* RESET MENTAL */
-main section {
-  width: 100%;
-}
-
-/* BLOQUE 1 */
-.introduccion {
-  height: 100vh;
+.intro-futurista {
+  height: 200vh; /*"vh" significa Viewport Height, la altura para permitir scroll*/
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #00ffff;
 }
 
-.introduccion h2 {
+.intro-futurista h2 {
   font-size: 4rem;
   margin-bottom: 1rem;
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff;
 }
 
-.introduccion p {
-  font-size: 1.2rem;
-  opacity: 0.7;
+.intro-futurista p {
+  font-size: 1.5rem;
+  opacity: 0.8;
+  text-shadow: 0 0 5px #00ffff;
 }
 
-/* BLOQUE 2 */
-.imagen-central {
-  min-height: 100vh;
+/*Imagen central*/
+.imagen-futurista {
+  min-height: 200vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #111;
 }
 
-.imagen-central img {
+.imagen-futurista img {
   max-width: 80%;
   height: auto;
+  border: 3px solid #00ffff;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #ff00ff;
+  transform: scale(1);
+  transition: transform 1s;
 }
 
-/* BLOQUE 3 */
-.parrafo {
-  min-height: 100vh;
+.imagen-futurista img:hover {
+  transform: scale(1.05);
+}
+
+.texto-impacto {
+  min-height: 250vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  background: linear-gradient(135deg, #ff0080, #7928ca);
+  color: white;
 }
 
-.parrafo p {
+.texto-impacto p {
   font-size: 2rem;
-  line-height: 1.6;
   max-width: 700px;
+  line-height: 1.6;
+  text-shadow: 0 0 5px #000;
 }
 
-/* BLOQUE 4 */
-.conclusio {
-  min-height: 100vh;
+/* BLOQUE 4: CIERRE */
+.cierre {
+  min-height: 250vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: #000;
+  color: #00ffff;
   text-align: center;
 }
 
-.conclusio p {
-  font-size: 1.4rem;
+.cierre p {
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
-.nav-prototipos {
-  color:white;
-  margin-top: 3rem;
+.boton-reinicio {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  border: 2px solid #00ffff;
+  color: #00ffff;
   text-decoration: none;
-  font-size: 1rem;
-  opacity: 0.6;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: all 0.3s;
 }
 
-.nav-prototipos:hover {
-  opacity: 1;
+.boton-reinicio:hover {
+  background: #00ffff;
+  color: #000;
+  transform: scale(1.1);
 }
 
 h3 {
@@ -267,13 +258,15 @@ footer {
   }
 
   /* Asegurar que todas las imágenes no se salgan de su contenedor */
-  img, .hero-image {
-  max-width: 100%;  /* nunca más ancho que su contenedor */
-  height: auto;
-  display: block;
-  border-radius: 10px;
-  box-sizing: border-box;
+  img {
+    width: 80%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    box-sizing: border-box;
   }
+  
+
 }
 
 @media (max-width: 768px) {
