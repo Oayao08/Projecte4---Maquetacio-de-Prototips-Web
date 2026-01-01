@@ -132,7 +132,7 @@ img {
 }
 
 .intro-futurista {
-  height: 200vh; /*"vh" significa Viewport Height, la altura para permitir scroll*/
+  height: 300vh; /*"vh" significa Viewport Height, la altura para permitir scroll*/
   display: flex;
   flex-direction: column;
   justify-content: center;
