@@ -97,7 +97,26 @@ h1 {
 .hero {
   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   color: #ffffff;
+  padding: 4rem 2rem;
   text-align: center;
+}
+
+article.destacado {
+  position: relative; /* importante para que el badge se posicione dentro del artículo */
+}
+
+/*Detalle para prototipos destacados*/
+.badge {
+  position: absolute;
+  top: 15px;           /* distancia desde arriba */
+  left: 15px;         /* distancia desde la izquierda */
+  background: linear-gradient(135deg, #00ff00b0, #058d00); /* degradado verde*/
+  color: #1f2933;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 12px;   /* espacio interno del badge */
+  border-radius: 999px;
+  letter-spacing: 1px;
 }
 
 article {
@@ -131,101 +150,11 @@ img {
   color-scheme: black;
 }
 
-.intro-futurista {
-  height: 300vh; /*"vh" significa Viewport Height, la altura para permitir scroll*/
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-  color: #00ffff;
-}
-
-.intro-futurista h2 {
-  font-size: 4rem;
-  margin-bottom: 1rem;
-  text-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff;
-}
-
-.intro-futurista p {
-  font-size: 1.5rem;
-  opacity: 0.8;
-  text-shadow: 0 0 5px #00ffff;
-}
-
-/*Imagen central*/
-.imagen-futurista {
-  min-height: 200vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #111;
-}
-
-.imagen-futurista img {
-  max-width: 80%;
+.hero-image {
+  width: 100%;
+  max-width: 600px;
   height: auto;
-  border: 3px solid #00ffff;
-  border-radius: 15px;
-  box-shadow: 0 0 20px #ff00ff;
-  transform: scale(1);
-  transition: transform 1s;
-}
-
-.imagen-futurista img:hover {
-  transform: scale(1.05);
-}
-
-.texto-impacto {
-  min-height: 250vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: linear-gradient(135deg, #ff0080, #7928ca);
-  color: white;
-}
-
-.texto-impacto p {
-  font-size: 2rem;
-  max-width: 700px;
-  line-height: 1.6;
-  text-shadow: 0 0 5px #000;
-}
-
-/* BLOQUE 4: CIERRE */
-.cierre {
-  min-height: 250vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: #000;
-  color: #00ffff;
-  text-align: center;
-}
-
-.cierre p {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.boton-reinicio {
-  display: inline-block;
-  padding: 0.8rem 1.5rem;
-  border: 2px solid #00ffff;
-  color: #00ffff;
-  text-decoration: none;
-  font-weight: bold;
   border-radius: 10px;
-  transition: all 0.3s;
-}
-
-.boton-reinicio:hover {
-  background: #00ffff;
-  color: #000;
-  transform: scale(1.1);
 }
 
 h3 {
@@ -235,6 +164,39 @@ h3 {
   font-size: 18px;
   text-decoration: none;
   list-style: none;
+}
+
+.navegacion-prototipos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 60px auto;
+  max-width: 750px;
+  padding: 0 20px;
+}
+
+.nav-prototipo {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 14px 24px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #2a5298, #1e3c72);
+  color: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.nav-prototipo:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+}
+
+.nav-prototipo.anterior {
+  opacity: 0.9;
+}
+
+.nav-prototipo.siguiente {
+  opacity: 1;
 }
 
 footer {
@@ -248,28 +210,33 @@ footer {
 }
 
 /*Estilo responsive*/
-/*Móviles*/
+@media (max-width: 1024px) {
+  .galeria {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  article {
+    width: 90%;
+  }
+
+  /* Asegurar que todas las imágenes no se salgan de su contenedor */
+  img, .hero-image {
+  max-width: 100%;  /* nunca más ancho que su contenedor */
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  box-sizing: border-box;
+  }
+}
+
 @media (max-width: 768px) {
-  .navbar {
-    padding: 1rem 0.5rem;
+  h1 {
+    font-size: 1.8rem;
   }
 
-  .navbar-links {
-    flex-direction: column;
-    gap: 1rem;
-    padding: 0.5 1rem;
-    margin-top: 0.5rem;
-  }
-
-  .navbar-links li a{
-    padding: 0.5rem 1rem;
-    font-size: 16px;
-  }
-
-  .titulo{
-    flex-direction: column;
+  .titulo {
     font-size: 20px;
-    gap: 10px;
+    text-align: center;
   }
 
   .subtitulo {
@@ -277,78 +244,45 @@ footer {
     text-align: center;
   }
 
+  .navbar-links {
+    flex-direction: column;
+    gap: 12px;
+    padding: 1rem 1.5rem;
+  }
+
   .galeria {
-    grid-template-columns: 1fr; /*Una sola columna*/
-    gap: 2rem;
+    gap: 1.5rem;
     padding: 0 1rem;
     margin: 2rem auto;
   }
 
-   article {
-    width: 90%; /* Ajuste de ancho para móviles */
-    margin: 15px auto;
-    padding: 10px;
-  }
-
-  img {
-    width: 100%;
-    height: auto;
-  }
-
-  .intro-futurista h2 {
-    font-size: 2.5rem;
-  }
-
-  .intro-futurista p {
-    font-size: 1.2rem;
-  }
-
-  .texto-impacto p {
-    font-size: 1.5rem;
-    padding: 0 1rem;
-  }
-
-  .cierre p {
-    font-size: 1.2rem;
-    padding: 0 1rem;
-  }
-
-  .imagen-futurista img {
-    max-width: 95%;
+  article {
+    margin: 1rem auto;
+    width: 95%;
   }
 }
 
-/*Pantallas medianas*/
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+  .titulo {
+    font-size: 18px;
+  }
 
-  .navbar-links {
-    flex-wrap: wrap;
-    justify-content: center;
+  .subtitulo {
+    font-size: 13px;
+  }
+
+  .navbar-links li a {
+    font-size: 16px;
+    padding: 0.3rem 0.7rem;
   }
 
   .galeria {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
 
-  article {
-    width: 320px;
-  }
-
-  .intro-futurista h2 {
-    font-size: 3.5rem;
-  }
-
-  .intro-futurista p {
-    font-size: 1.4rem;
-  }
-
-  .texto-impacto p {
-    font-size: 1.8rem;
-  }
-
-  .cierre p {
-    font-size: 1.4rem;
-  }
 }
