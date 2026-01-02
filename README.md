@@ -75,19 +75,17 @@ El diseño se ajusta automáticamente mediante media queries para garantizar una
 
 ## 📂 Estructura del proyecto
 
+📂 Estructura del proyecto
 Projecte4/
-│
 ├── index.html
 ├── styles.css
 ├── icon.png
-│
 ├── prototips/
 │   └── prototip_n/
 │       ├── index.html
 │       ├── style.css
 │       └── imatges/
-          └──prototip_n.jpg
-│
+│           └── prototip_n.jpg
 ├── README.md
 └── LICENSE
 
