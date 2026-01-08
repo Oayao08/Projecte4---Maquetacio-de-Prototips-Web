@@ -43,7 +43,7 @@ A diferencia del resto, no sigue un formato clásico de tarjeta o galería, sino
 - Lenguaje visual futurista
 - Enfoque más artístico y experimental
 
-Este prototipo busca **sorprender al usuario** y demostrar que la maquetación también puede transmitir emociones y narrativa visual.
+Este prototipo busca **sorprender al usuario**.
 
 ---
 
