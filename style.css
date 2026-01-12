@@ -141,7 +141,6 @@ p {
   font-weight: 600;
   color: #ffffff;
   background: rgba(0, 0, 0, 0.45);
-  backdrop-filter: blur(6px);
   border-radius: 999px;
   opacity: 0;
   transition: opacity 0.35s ease, transform 0.35s ease;
