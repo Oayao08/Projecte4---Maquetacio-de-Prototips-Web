@@ -62,7 +62,7 @@ p {
   color: #2a5298;
   padding: 0.4rem 0.9rem;
   border-radius: 999px;
-  transition: background-color 0.25s ease, color 0.25s ease;
+  transition: 0.25s ease, color 0.25s ease;
 }
 
 .navbar-links li a:hover {
@@ -84,7 +84,7 @@ p {
 
 .galeria {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /*auto-fit ajusta el número de columnas según el espacio disponible, minmax define un tamaño mínimo y máximo para las columnas*/
   gap: 3rem;
   max-width: 1300px;
   margin: 4rem auto;
@@ -121,7 +121,7 @@ p {
 .galeria-item img {
   width: 100%;
   height: 190px;
-  object-fit: cover;
+  object-fit: cover; /*Especificar cómo debe ajustarse el contenido de un elemento reemplazado, como una imagen o un video, dentro de su contenedor. cover hace que la imagen cubra todo el contenedor, recortando si es necesario para mantener la proporción*/
   transition: transform 0.6s ease; /*define una transición suave para la transformación de la imagen al pasar el ratón por encima*/
 }
 
@@ -147,11 +147,11 @@ p {
 
 .galeria-item:hover h3 {
   opacity: 1;
-  transform: translateX(-50%) translateY(0);
+  transform: translateX(-50%) translateY(0); /*se asegura de que el elemento quede perfectamente centrado horizontalmente y en su posición vertical normal después de un efecto de animación o hover*/
 }
 
 .hero {
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /*Rotar elemento*/
   color: #ffffff;
   padding: 4rem 2rem;
   text-align: center;
@@ -165,7 +165,7 @@ article {
   text-decoration: none;
   background-color: #444141;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*Añadida sombra*/
   margin: 20px;
   padding: 15px;
   width: 380px;
@@ -177,7 +177,7 @@ article:hover {
   transform: translateY(-20px); /*Añadir efecto transición al pasar el ratón*/
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /*añade sombra*/
   background-color: #f3e9e9;
-  transition-duration: 0.3s;
+  transition-duration: 0.3s; /*Duración de la transición*/
 }
 
 img {
@@ -186,7 +186,7 @@ img {
   border-radius: 10px;
   height: 150px;
   width: 250px;
-  color-scheme: black;
+  color-scheme: black; /*Hace que la imagen tenga un esquema de color oscuro*/
 }
 
 h3 {
@@ -199,6 +199,7 @@ h3 {
 }
 
 .contact-form {
+  /*ESTOS COMENTARIOS SON DE APUNTES, NO POR IA*/
   display: flex; /* sigue usando flex */
   flex-direction: column; /* los elementos se apilan verticalmente */
   gap: 15px; /* espacio entre campos */
@@ -213,7 +214,7 @@ h3 {
   border: 1px solid #ccc;
   font-size: 16px;
   width: 100%;
-  box-sizing: border-box;
+  box-sizing: border-box; /* para incluir padding en el ancho total */
 }
 
 .contact-form .button {
@@ -222,14 +223,14 @@ h3 {
   border: none;
   padding: 12px;
   border-radius: 12px;
-  cursor: pointer;
+  cursor: pointer; /* cambia el cursor al pasar por encima */
   font-size: 16px;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s; /* transición suave para transformaciones */
 }
 
 .contact-form .button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px); /* eleva el botón ligeramente */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* añade sombra al botón */
 }
 
 footer {
@@ -242,7 +243,10 @@ footer {
   bottom: 0;
 }
 
-/*Estilo responsive*/
+
+/*LEER NOTA AL FINAL DEL CSS*/
+
+/*Estilo responsive, sí que me he apoyado en IA y fuentes externas para poder hacerla*/
 
 /*Para ordenadores pequeños*/
 @media (max-width: 1024px) {
@@ -347,3 +351,19 @@ footer {
     transform: translateX(-50%) translateY(0); /*se asegura de que el elemento quede perfectamente centrado horizontalmente y en su posición vertical normal después de un efecto de animación o hover*/
   }
 }
+
+/*NOTA IMPORTANTE PARA CARLOS - NO ES PARTE DEL CÓDIGO CSS
+
+Me disculpo por haber causado confusión en el trabajo, en los próximos no me avanzaré más de la cuenta. 
+Se debe principalmente porque al faltar a clases, no he sabido concretamente lo que habeis hecho  o no
+en clase.
+
+Para no confundir más, yo he trabajado en el código de forma independiente. desde <body> hasta <footer> sin ayuda. 
+Al haberlo acabado fue cuando he ido añadiendo efectos adicionales. Y al hacer los prototipos de 1 a 60, preparé primero 
+el prototipo 1 y añadí los efectos después de haber estructurado el CSS y HTML para que los siguientes prototipos siguiesen la misma estructura. 
+Por eso en los prototipos 2 y 3 ya aparecen los efectos añadidos. 
+
+Dejo constancia de que este trabajo lo he trabajado mucho y con constancia, corrigiendo mis errores y aprendiendo.
+
+Para acabar, vuelvo a disculparme de nuevo por las molestias ocasionadas. En los próximos trabajos no avanzaré por mi cuenta y 
+me aseguraré de que el contenido sea lo que se de en clase. */
