@@ -107,26 +107,26 @@ p {
   position: relative;
   background-color: #ffffff;
   border-radius: 18px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12), 0 30px 60px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12), 0 30px 60px rgba(0, 0, 0, 0.08); /*Añade sombra a las tarjetas*/
   cursor: pointer;
 }
 
 /*Efectos visuales*/
 
 .galeria-item:hover {
-  transform: translateY(-12px) scale(1.015);
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25), 0 45px 90px rgba(0, 0, 0, 0.18);
+  transform: translateY(-12px) scale(1.015); /*Al pasar el ratón por encima, la tarjeta se eleva 12px y aumenta su tamaño un 1.5%*/
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25), 0 45px 90px rgba(0, 0, 0, 0.18); /*Aumenta la sombra para dar efecto de elevación*/
 }
 
 .galeria-item img {
   width: 100%;
   height: 190px;
   object-fit: cover;
-  transition: transform 0.6s ease;
+  transition: transform 0.6s ease; /*define una transición suave para la transformación de la imagen al pasar el ratón por encima*/
 }
 
 .galeria-item:hover img {
-  transform: scale(1.08);
+  transform: scale(1.08); /*Al pasar el ratón por encima, la imagen dentro de la tarjeta se amplía un 8%*/
 }
 
 .galeria-item h3 {
@@ -142,7 +142,7 @@ p {
   background: rgba(0, 0, 0, 0.45);
   border-radius: 999px;
   opacity: 0;
-  transition: opacity 0.35s ease, transform 0.35s ease;
+  transition: opacity 0.35s ease, transform 0.35s ease;  /*transición suave para la opacidad y la transformación del título al pasar el ratón por encima*/
 }
 
 .galeria-item:hover h3 {
@@ -169,8 +169,8 @@ article {
   margin: 20px;
   padding: 15px;
   width: 380px;
-  transition: transform 0.3s, box-shadow 0.3s;
-  border: 0.2px solid #020202;
+  transition: transform 0.3s, box-shadow 0.3s;  /*Añadido efecto de transición*/
+  border: 0.2px solid #020202; /*Añadido borde oscuro*/
 }
 
 article:hover {
