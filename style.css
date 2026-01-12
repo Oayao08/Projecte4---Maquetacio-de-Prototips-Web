@@ -27,7 +27,6 @@ h1 {
 p {
   padding: 0 15px;
   text-align: center;
-  max-width: 65ch; /*unidad de medida relativa a la fuente actual, que representa el ancho del carácter "0" (cero)*/
   margin: 10px auto 40px auto;
 }
 
