@@ -108,10 +108,7 @@ p {
   position: relative;
   background-color: #ffffff;
   border-radius: 18px;
-  overflow: hidden;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12), 0 30px 60px rgba(0, 0, 0, 0.08);
-  transition: transform 0.45s cubic-bezier(0.2, 0.8, 0.2, 1),
-    box-shadow 0.45s cubic-bezier(0.2, 0.8, 0.2, 1);
   cursor: pointer;
 }
 
@@ -137,7 +134,7 @@ p {
   position: absolute;
   bottom: 14px;
   left: 50%;
-  transform: translateX(-50%) translateY(10px);
+  transform: translateX(-50%) translateY(10px);  /*Función que mueve un elemento horizontalmente (eje X) y verticalmente (eje Y) desde su posición original*/
   margin: 0;
   padding: 0.4rem 1.2rem;
   font-size: 1.05rem;
