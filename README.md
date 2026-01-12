@@ -43,7 +43,7 @@ A diferencia del resto, no sigue un formato clásico de tarjeta o galería, sino
 - Lenguaje visual futurista
 - Enfoque más artístico y experimental
 
-Este prototipo busca **sorprender al usuario** y demostrar que la maquetación también puede transmitir emociones y narrativa visual.
+Este prototipo busca **sorprender al usuario**.
 
 ---
 
@@ -76,20 +76,21 @@ El diseño se ajusta automáticamente mediante media queries para garantizar una
 ## 📂 Estructura del proyecto
 
 Projecte4/
-│
-├── index.html
-├── styles.css
-├── icon.png
-│
-├── prototips/
-│   └── prototip_n/
-│       ├── index.html
-│       ├── style.css
-│       └── imatges/
-          └──prototip_n.jpg
-│
+.
+├── Projecte4---Maquetacio-de-Prototips-Web
 ├── README.md
-└── LICENSE
+├── contacte.html
+├── icon.png
+├── index.html
+├── license
+├── nosaltres.html
+├── prototips
+│   ├── prototip_n
+│   │   ├── imatges
+│   │   ├── index.html
+│   │   └── style.css
+├── prototips.html
+└── style.css
 
 ---
 
